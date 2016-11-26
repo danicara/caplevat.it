@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cap Levat</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<style>
+		html, body {
+			height: 100%;
+			width: 100%;
+		  margin: 0;
+		  padding: 0;
+		  box-sizing: border-box;
+		  overflow: hidden;
+		}
+		.bg {
+		  height: 100%;
+		  width: 100%;
+		  background-image: url(resources/img/bg.jpg);
+		  background-repeat: no-repeat;
+		  background-position: center;
+		  background-size: cover;
+		  background-color: #627f98;
+		  box-sizing: border-box;
+		  border: 35px solid #fff;
+		  position: relative;
+		}
+
+		.bg svg {
+		  width: 40%;
+		  max-height: 100%;
+		  position: absolute;
+		  bottom: -1%;
+		  left: -1.5%;
+		}
+
+		.player-frame {
+		  overflow: hidden;
+		  width: 40%;
+		  height: 118px;
+		  position: absolute;
+		  bottom: 0px;
+		  right: 0;
+		    max-width: 700px;
+		}
+
+		.player {
+			border: none;
+			  width: calc(100% + 2px);
+			  height: 120px;
+			  position: relative;
+			  top: -1px;
+			  left: -1px;
+		}
+
+
+
+		.footer {
+		  position: absolute;
+		  bottom: 0px;
+		  font-family: sans-serif;
+		  /* text-transform: uppercase; */
+		  color: #627f98;
+		  font-weight: bold;
+		  text-align: center;
+		  width: 100%;
+		  font-size: 10pt;
+		  background-color: #ffffff;
+		  line-height: 36px;
+		}
+		.footer a {
+			color: #627f98;
+			text-decoration: none; 
+			margin: 0 5px;
+			white-space: nowrap
+		}
+
+		.footer br {
+			display: none;
+		}
+
+		@media screen and (max-width: 1200px) {
+			.bg svg {
+				/*width: 80%;*/
+			  left: -2%;
+			}
+		}
+
+		@media screen and (max-width: 700px) {
+
+			.bg {
+				background-position: 0 -80px;
+				border: 20px solid #fff;
+				border-bottom: none;
+			}
+
+			.bg svg {
+				width: 45%;
+				left: -1%;
+				bottom: 138px;
+			}
+
+			.player-frame {
+		  	width: 100%;
+		  	background-color: #fff;
+		  	bottom: 25px;
+			}
+
+			.player {
+				width: calc(100% + 2px);
+			}
+		}
+
+		@media screen and (max-width: 350px) {
+				.footer {
+				  line-height: 22px;
+				  height: 50px;
+				  padding-top: 5px;
+				}
+
+				.player-frame {
+				  bottom: 55px;
+				}
+
+				.bg svg {
+					bottom: 170px;
+				}
+
+				.footer br {
+					display: block;
+				}
+		}
+
+		@media screen and (max-width: 700px) and (orientation:portrait) {
+			.bg {
+				background-position: 62% -110px;
+			}
+			.bg svg {
+				width: 100%;
+				left: -3%;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="bg">
+	<div style="background-color: rgba(195, 193, 218, 0.1); width: 100%; height: 100%;"></div>
+	
+	<div class="player-frame">
+		<iframe class="player" src="https://bandcamp.com/EmbeddedPlayer/album=3382235728/size=large/bgcol=ffffff/linkcol=627f98/tracklist=false/artwork=none/transparent=true/" seamless><a href="http://caplevat.bandcamp.com/album/contra-lo-solelh">Contra lo solelh by Cap Levat</a></iframe>
+	</div>
+
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 232.102 124.696" enable-background="new 0 0 232.102 124.696" xml:space="preserve" preserveAspectRatio="xMinYMax meet">
+			<g>
+	<path fill="#fff" d="M47.617,38.438c-0.183,3.959-1.25,7.455-3.203,10.488c-1.953,3.034-4.694,5.385-8.223,7.051
+		c-3.529,1.667-7.559,2.5-12.09,2.5c-7.475,0-13.359-2.435-17.656-7.305C2.148,46.303,0,39.428,0,30.547v-2.813
+		c0-5.572,0.97-10.449,2.91-14.629c1.939-4.18,4.732-7.408,8.379-9.688C14.935,1.14,19.153,0,23.945,0
+		c6.9,0,12.447,1.816,16.641,5.449c4.192,3.633,6.575,8.64,7.148,15.02H34.063c-0.104-3.463-0.977-5.95-2.617-7.461
+		c-1.641-1.51-4.141-2.266-7.5-2.266c-3.412,0-5.912,1.276-7.5,3.828c-1.589,2.553-2.422,6.628-2.5,12.227v4.023
+		c0,6.068,0.762,10.404,2.285,13.008c1.523,2.604,4.146,3.906,7.871,3.906c3.15,0,5.56-0.742,7.227-2.227
+		c1.666-1.484,2.552-3.841,2.656-7.07H47.617z"/>
+	<path fill="#fff" d="M122.305,38.398v19.297h-13.711V0.82h22.695c4.349,0,8.196,0.801,11.543,2.402
+		c3.346,1.602,5.938,3.881,7.773,6.836c1.836,2.956,2.754,6.309,2.754,10.059c0,5.547-1.986,9.98-5.957,13.301
+		c-3.972,3.32-9.421,4.98-16.348,4.98H122.305z M122.305,27.813h8.984c2.656,0,4.681-0.664,6.074-1.992
+		c1.393-1.328,2.09-3.203,2.09-5.625c0-2.656-0.717-4.778-2.148-6.367c-1.433-1.588-3.386-2.396-5.859-2.422h-9.141V27.813z"/>
+	<path fill="#fff" d="M18.313,114.149H42.18v10.547H4.602V67.821h13.711V114.149z"/>
+	<path fill="#fff" d="M83.234,100.556H61.672v13.594h25.469v10.547h-39.18V67.821h39.258v10.586H61.672v11.992h21.563V100.556z"
+		/>
+	<path fill="#fff" d="M111.297,124.696h15l19.141-56.875h-15.313l-11.328,39.406L84.438,0.82H70.547L49.688,57.695h14.648
+		l3.281-10.625h18.789L111.297,124.696z M70.898,36.484l6.094-19.727l6.133,19.727H70.898z"/>
+	<path fill="#fff" d="M172.953,114.071h-18.789l-3.281,10.625h-14.648l20.859-56.875h12.891L191,124.696h-14.727L172.953,114.071
+		z M157.445,103.485h12.227l-6.133-19.727L157.445,103.485z"/>
+	<path fill="#fff" d="M232.102,78.407h-17.07v46.289H201.32V78.407h-16.758V67.821h47.539V78.407z"/>
+</g>
+		</svg>
+	</div>
+
+	<div class="footer">
+		<a href="mailto:info@caplevat.it">info@caplevat.it</a>
+		<br>
+		<a href="downloads/cap-levat-scheda-tecnica.pdf" target="_blank">scheda tecnica</a>
+		<a href="downloads/cap-levat-fiche-technique.pdf" target="_blank">fiche technique</a>
+	</div>
+</body>
+</html>
